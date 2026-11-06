@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YPage: сайт по описанию, нейросети без VPN</title>
+  <meta name="description" content="YPage: опишите бизнес, нейросети соберут сайт, картинки, видео и тексты. Из России, без VPN. Хостинг и админка внутри. 14 дней Pro бесплатно и 500 бонусов на старте.">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta property="og:title" content="YPage: сайт по описанию, нейросети без VPN">
+  <meta property="og:description" content="14 дней Pro бесплатно и 500 бонусов на старте. Сайт, картинки, видео и тексты от нейросетей из России.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="YPage — на главную"><img src="assets/logo-dark.svg" alt="YPage" width="906" height="256"></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#how">Как работает</a>
+        <a href="#features">Возможности</a>
+        <a href="#compare">Сравнение</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <a class="btn btn--sm header__cta" href="https://ypage.site/?utm_source=landing&utm_medium=header" target="_blank" rel="noopener"><span>Попробовать бесплатно</span></a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-controls="nav" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <h1 data-split>Опишите бизнес&nbsp;— получите сайт</h1>
+        <div class="hero__grid">
+          <div class="hero__left">
+            <p class="hero__sub" data-r style="--i:6">Нейросети соберут сайт, картинки, видео и тексты. Из России и без VPN. Хостинг и админка уже внутри, программист не нужен.</p>
+            <div class="hero__act" data-r style="--i:7">
+              <a class="btn" href="https://ypage.site/?utm_source=landing&utm_medium=hero" target="_blank" rel="noopener"><span>Попробовать 14 дней Pro</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="link" href="#how">Смотреть, как это работает</a>
+            </div>
+            <ul class="facts" data-r style="--i:8">
+              <li><b><span data-count="14">14</span></b><span>дней Pro бесплатно</span></li>
+              <li><b><span data-count="500">500</span></b><span>бонусов на старте: хватит на первый сайт</span></li>
+              <li><b>0 ₽</b><span>на VPN и зарубежные карты</span></li>
+            </ul>
+          </div>
+          <div class="hero__demo" data-r style="--i:5">
+            <div class="demo" id="demoHero" aria-label="Пример: как ИИ собирает сайт по описанию"></div>
+            <noscript><img src="assets/blocks.webp" alt="Конструктор YPage: блоки собираются в страницу" width="1447" height="1085"></noscript>
+            <div class="chips" id="chips" role="group" aria-label="Выберите пример бизнеса">
+              <button type="button" class="chip is-on" data-n="0" aria-pressed="true">Кофейня</button>
+              <button type="button" class="chip" data-n="1" aria-pressed="false">Магазин кроссовок</button>
+              <button type="button" class="chip" data-n="2" aria-pressed="false">Стоматология</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marq" aria-hidden="true">
+      <div class="marq__t" id="marq">
+        <span>Сайты</span><span>Интернет-магазины</span><span>Картинки</span><span>Видео</span><span>Тексты</span><span>Квизы</span><span>Заявки</span>
+        <span>Сайты</span><span>Интернет-магазины</span><span>Картинки</span><span>Видео</span><span>Тексты</span><span>Квизы</span><span>Заявки</span>
+      </div>
+    </div>
+
+    <!-- PAINS -->
+    <section class="pains" id="why">
+      <div class="wrap">
+        <h2 data-r>Три причины, почему сайт откладывают</h2>
+        <ul class="pains__list">
+          <li class="pain" data-r>
+            <p class="pain__old"><span>Сделать сайт трудно</span></p>
+            <div class="pain__new">
+              <h3>Опишите задачу, агент соберёт</h3>
+              <p>Структура, тексты, картинки и дизайн под вашу нишу появляются из пары предложений. Дальше правите чатом с ассистентом или руками в блоках.</p>
+            </div>
+          </li>
+          <li class="pain" data-r>
+            <p class="pain__old"><span>Нейросети только через VPN</span></p>
+            <div class="pain__new">
+              <h3>Популярные нейросети внутри YPage</h3>
+              <p>Генерируйте тексты, картинки и видео в одном окне. Из России, без VPN, без отдельных подписок и сервисов.</p>
+            </div>
+          </li>
+          <li class="pain" data-r>
+            <p class="pain__old"><span>Админка и хостинг только с программистом</span></p>
+            <div class="pain__new">
+              <h3>Хостинг и админка уже есть</h3>
+              <p>Публикация с SSL, кабинет с заявками, уведомления в Telegram и VK. Свой домен подключается по пошаговой инструкции.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="how" id="how">
+      <div class="wrap">
+        <h2 data-r>От описания до сайта за три шага</h2>
+        <div class="how__grid">
+          <div class="how__stage">
+            <div class="demo demo--stage" id="demoStage" aria-hidden="true"></div>
+          </div>
+          <ol class="how__steps" id="steps">
+            <li class="step" data-step="1">
+              <h3>Опишите бизнес</h3>
+              <p>Что продаёте, кому и в каком городе. Пара предложений обычным языком, без техзадания.</p>
+            </li>
+            <li class="step" data-step="2">
+              <h3>Агент соберёт сайт</h3>
+              <p>Придумает структуру, напишет тексты, подберёт картинки и стиль под вашу нишу. Не нравится что-то? Скажите в чате, и он поправит.</p>
+            </li>
+            <li class="step" data-step="3">
+              <h3>Публикуйте и принимайте заявки</h3>
+              <p>Хостинг и SSL включены. Заявки приходят на почту, в кабинет, в Telegram и VK.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="feat" id="features">
+      <div class="wrap feat__head">
+        <h2 data-r>Всё для сайта в одном окне</h2>
+        <p class="lead" data-r style="--i:1">Пользуйтесь сами или делайте сайты на заказ: тот же конструктор, те же нейросети, быстрее в разы.</p>
+      </div>
+
+      <article class="fr fr--blue">
+        <div class="wrap fr__in">
+          <div class="fr__txt">
+            <h3 data-r>Сайт под ключ по описанию</h3>
+            <p data-r style="--i:1">Расскажите про бизнес, и агент спроектирует страницы, а не вставит шаблон, который уже стоит на тысяче других сайтов.</p>
+            <ul class="tick" data-r style="--i:2">
+              <li>Уникальный дизайн под вашу нишу</li>
+              <li>Тексты, структура и картинки за один запрос</li>
+              <li>SEO уже заложено: заголовки, описания, подписи к картинкам</li>
+              <li>Правки чатом или вручную в блоках</li>
+            </ul>
+          </div>
+          <div class="fr__pic" data-r style="--i:1"><img data-par src="assets/plan.webp" alt="Агент строит структуру сайта и собирает страницы" width="1447" height="1085" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="fr fr--flip">
+        <div class="wrap fr__in">
+          <div class="fr__txt">
+            <h3 data-r>Картинки, видео и тексты без VPN</h3>
+            <p data-r style="--i:1">Нейросети работают прямо в конструкторе. Картинка встаёт в блок, а вы выбираете лучший из нескольких вариантов.</p>
+            <ul class="tick" data-r style="--i:2">
+              <li>Картинки по нише сайта или по вашему описанию</li>
+              <li>Видео и тексты в том же окне</li>
+              <li>Кредиты в рублях: 10 000 кредитов стоят 1 000 ₽</li>
+              <li>500 бонусов на старте: хватит на первый сайт</li>
+            </ul>
+          </div>
+          <div class="fr__pic" data-r style="--i:1"><img data-par src="assets/image-gen.webp" alt="Несколько вариантов картинки на выбор, выбранная встаёт в блок сайта" width="1447" height="679" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="fr fr--blue">
+        <div class="wrap fr__in">
+          <div class="fr__txt">
+            <h3 data-r>Интернет-магазин и каталог</h3>
+            <p data-r style="--i:1">Соберите магазин из готовых блоков или попросите агента нарисовать уникальный. Каталог растёт вместе с ассортиментом.</p>
+            <ul class="tick" data-r style="--i:2">
+              <li>Публикация магазина: 10 000 ₽</li>
+              <li>Каталог на 100, 1 000 или 10 000 товаров</li>
+              <li>Карточки товаров, формы и квизы уже внутри</li>
+              <li>Для продвинутых: свой HTML и код</li>
+            </ul>
+          </div>
+          <div class="fr__pic" data-r style="--i:1"><img data-par src="assets/blocks.webp" alt="Каталог блоков: преимущества, галерея, FAQ, форма, тарифы" width="1447" height="1085" loading="lazy"></div>
+        </div>
+      </article>
+
+      <div class="wrap more">
+        <h3 data-r>И ещё пять вещей, за которые обычно платят отдельно</h3>
+        <dl class="more__list">
+          <div data-r><dt>Чат-консультант</dt><dd>ИИ отвечает посетителям круглосуточно и знает ваши цены и условия. Без Jivo и отдельной оплаты.</dd></div>
+          <div data-r style="--i:1"><dt>Квизы</dt><dd>Квиз появляется прямо в конструкторе. Без сторонних виджетов и вставки кода.</dd></div>
+          <div data-r style="--i:2"><dt>Заявки</dt><dd>Форма, квиз и обратный звонок в одном потоке: на почту, в кабинет, в Telegram и VK.</dd></div>
+          <div data-r style="--i:3"><dt>Свой домен</dt><dd>Сайт открывается по вашему адресу, SSL бесплатно. Инструкция по DNS пошаговая.</dd></div>
+          <div data-r style="--i:4"><dt>Импорт сайта</dt><dd>Загрузите свой сайт ZIP-архивом и продолжайте править его в редакторе вместе с агентом.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- COMPARE -->
+    <section class="cmp" id="compare">
+      <div class="wrap">
+        <h2 data-r>Так много конструкторов. Чем YPage лучше?</h2>
+        <p class="lead" data-r style="--i:1">Другие дают блоки, которые нужно собирать самому. YPage собирает готовый сайт по описанию и сразу включает то, за что в других платят отдельно.</p>
+        <div class="cmp__scroll" data-r style="--i:2">
+          <table class="cmp__t">
+            <thead>
+              <tr><th scope="col"><span class="sr">Критерий</span></th><th scope="col" class="is-us">YPage</th><th scope="col">Craftum</th><th scope="col">Tilda</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Готовый сайт по одному описанию</th><td class="is-us"><b>Да</b></td><td>Частично: страницу нужно дособирать</td><td>Частично: ИИ только для текстов и картинок</td></tr>
+              <tr><th scope="row">Бесплатный период</th><td class="is-us"><b>14 дней Pro</b> и бонусы на ИИ</td><td>10 дней</td><td>Free-тариф без платных функций</td></tr>
+              <tr><th scope="row">Простота</th><td class="is-us"><b>Легко:</b> описали задачу словами</td><td>Средне</td><td>Сложно: много блоков и настроек</td></tr>
+              <tr><th scope="row">Загрузить свой сайт</th><td class="is-us"><b>Да,</b> ZIP-архивом</td><td>Нет, только HTML-блок</td><td>Нет</td></tr>
+              <tr><th scope="row">Квизы</th><td class="is-us"><b>Встроены</b></td><td>Сторонние виджеты за отдельную плату</td><td>Сторонние виджеты за отдельную плату</td></tr>
+              <tr><th scope="row">SEO-настройки</th><td class="is-us"><b>В базе</b> у каждого сайта</td><td>С тарифа «Оптимальный», 449 ₽/мес</td><td>С Personal, 750 ₽/мес</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" data-r>Сравнение подготовлено YPage по открытым тарифам конкурентов. Актуальные условия смотрите на сайтах сервисов.</p>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="price" id="pricing">
+      <div class="wrap">
+        <h2 data-r>Сколько стоит сайт с нейросетями</h2>
+        <p class="lead" data-r style="--i:1">Соберите свой набор, цена посчитается сразу. Первые 14 дней тариф Pro бесплатный.</p>
+        <div class="calc" data-r style="--i:2">
+          <form class="calc__ctl" id="calc" onsubmit="return false">
+            <fieldset class="ctl">
+              <legend>Тариф</legend>
+              <div class="plans">
+                <label class="plan"><input type="radio" name="plan" value="280"><span class="plan__box"><b>Старт</b><span>280 ₽ в месяц</span></span></label>
+                <label class="plan"><input type="radio" name="plan" value="440" checked><span class="plan__box"><b>Pro</b><span>440 ₽ в месяц</span></span></label>
+                <label class="plan"><input type="radio" name="plan" value="1200"><span class="plan__box"><b>Бизнес</b><span>1 200 ₽ в месяц</span></span></label>
+              </div>
+              <p class="hint">Во всех тарифах: пользование сервисом и публикация сайта.</p>
+            </fieldset>
+
+            <div class="ctl">
+              <label class="ctl__t" for="packs">Кредиты для ИИ: <output id="packsOut">1 пакет</output></label>
+              <input type="range" id="packs" min="0" max="10" value="1" step="1">
+              <p class="hint">Пакет 10 000 кредитов стоит 1 000 ₽. Бонусные 500 на старте уже ваши.</p>
+            </div>
+
+            <fieldset class="ctl">
+              <legend>Интернет-магазин</legend>
+              <label class="check"><input type="checkbox" id="shop"><span class="check__box" aria-hidden="true"></span><span>Нужен магазин: публикация 10 000 ₽</span></label>
+              <div class="cat" id="cat" hidden>
+                <label class="plan plan--s"><input type="radio" name="cat" value="1271" checked><span class="plan__box"><b>100 товаров</b><span>1 271 ₽</span></span></label>
+                <label class="plan plan--s"><input type="radio" name="cat" value="5928"><span class="plan__box"><b>1 000 товаров</b><span>5 928 ₽</span></span></label>
+                <label class="plan plan--s"><input type="radio" name="cat" value="25404"><span class="plan__box"><b>10 000 товаров</b><span>25 404 ₽</span></span></label>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="calc__out" aria-live="polite">
+            <p class="out__l">Каждый месяц</p>
+            <p class="out__big"><span id="outMonth">440</span> ₽</p>
+            <p class="out__l">Дополнительно за кредиты и магазин</p>
+            <p class="out__mid"><span id="outExtra">1 000</span> ₽</p>
+            <ul class="out__list" id="outList"></ul>
+            <a class="btn btn--ink" href="https://ypage.site/?utm_source=landing&utm_medium=calc" target="_blank" rel="noopener"><span>Начать с 14 дней бесплатно</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section class="offer" id="start">
+      <div class="wrap offer__in">
+        <div class="offer__txt">
+          <h2 data-r>Первый сайт бесплатно</h2>
+          <p class="lead" data-r style="--i:1">Зарегистрируйтесь, и 14 дней тариф Pro наш подарок. На старте ещё 500 бонусов, которых хватит собрать первый сайт или попробовать нейросети.</p>
+          <ul class="offer__nums" data-r style="--i:2">
+            <li><b><span data-count="14">14</span></b><span>дней Pro бесплатно</span></li>
+            <li><b><span data-count="500">500</span></b><span>бонусов на старте</span></li>
+          </ul>
+          <a class="btn" data-r style="--i:3" href="https://ypage.site/?utm_source=landing&utm_medium=offer" target="_blank" rel="noopener"><span>Зарегистрироваться и собрать сайт</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="offer__pic" data-r style="--i:1"><img class="bob" src="assets/hero.webp" alt="Робот-ассистент YPage" width="1233" height="884" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="wrap faq__in">
+        <h2 data-r>Частые вопросы</h2>
+        <div class="faq__list">
+          <details class="q" data-r><summary>Чем YPage отличается от других конструкторов и нейросетей?</summary><p>Конструктору не нужно вручную собирать блоки, а нейросети не нужны отдельно. YPage по описанию делает готовый сайт: структуру, тексты, картинки, адаптивную вёрстку. Внутри уже есть хостинг, заявки, квизы и чат-консультант.</p></details>
+          <details class="q" data-r><summary>Нужен ли VPN?</summary><p>Нет. Тексты, картинки и видео от популярных нейросетей работают прямо в YPage из России, без VPN и зарубежных аккаунтов.</p></details>
+          <details class="q" data-r><summary>Что такое кредиты и бонусы?</summary><p>Кредиты тратятся на работу нейросетей: сайт, картинки, видео, тексты. При регистрации вы получаете 500 бонусов, их хватит на первый сайт или на знакомство с нейросетями. Дальше можно купить пакет: 10 000 кредитов за 1 000 ₽.</p></details>
+          <details class="q" data-r><summary>Нужны ли хостинг, админка и программист?</summary><p>Нет. Публикация с SSL и кабинет с заявками уже входят в подписку. Свой домен подключается по пошаговой инструкции.</p></details>
+          <details class="q" data-r><summary>Можно ли делать сайты на заказ для клиентов?</summary><p>Да. Одни делают сайты себе, другие заказчикам. Агент собирает черновик за минуты, вы дорабатываете и публикуете.</p></details>
+          <details class="q" data-r><summary>У меня уже есть сайт. Можно его перенести?</summary><p>Да. Загрузите сайт ZIP-архивом с HTML, CSS и файлами, откроется редактор, где его можно менять вместе с ассистентом. Потом публикуйте на поддомене или на своём домене.</p></details>
+          <details class="q" data-r><summary>Сколько стоит интернет-магазин?</summary><p>Публикация одного магазина стоит 10 000 ₽. Каталог на 100 товаров: 1 271 ₽, на 1 000 товаров: 5 928 ₽, на 10 000 товаров: 25 404 ₽. Подписка выбирается отдельно: от 280 ₽ в месяц.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__in">
+        <div class="contact__l">
+          <h2 data-r>Остались вопросы?</h2>
+          <p class="lead" data-r style="--i:1">Оставьте контакт, мы свяжемся и подскажем, с чего начать именно вам. Или напишите нам в удобной сети.</p>
+          <ul class="social" data-r style="--i:2">
+            <li><a href="https://t.me/ypagesite" target="_blank" rel="noopener"><span>Telegram</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://vkvideo.ru/@ypage_ai" target="_blank" rel="noopener"><span>VK Видео</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://www.youtube.com/@YPage_site" target="_blank" rel="noopener"><span>YouTube</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://rutube.ru/channel/80660490/" target="_blank" rel="noopener"><span>RuTube</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="https://www.instagram.com/ypage.site" target="_blank" rel="noopener"><span>Instagram</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+        </div>
+        <form class="form" id="leadForm" novalidate data-r style="--i:1">
+          <h3>Заявка на консультацию</h3>
+          <label class="f"><span>Имя</span><input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+          <label class="f"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required></label>
+          <label class="f"><span>Чем занимаетесь</span><textarea name="comment" rows="3" placeholder="Какой сайт нужен или что хотите сгенерировать"></textarea></label>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button class="btn" type="submit"><span>Отправить заявку</span></button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a class="footer__logo" href="#top" aria-label="YPage — наверх"><img src="assets/logo-dark.svg" alt="YPage" width="906" height="256" loading="lazy"></a>
+      <div class="footer__row">
+        <p>© <span id="year">2026</span> YPage. Сайты, картинки, видео и тексты с нейросетями без VPN.</p>
+        <p><a href="https://ypage.site/" target="_blank" rel="noopener">ypage.site</a> · <a href="privacy.html">Конфиденциальность</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://t.me/ypagesite" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.5c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.2-2.1 4.5 3.3c.8.5 1.4.2 1.6-.8l3-14.2c.3-1.2-.4-1.7-1.2-1.3zM8.6 13.2l9.6-6c.5-.3.9-.1.5.2l-7.9 7.1-.3 3.2z" fill="currentColor"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
