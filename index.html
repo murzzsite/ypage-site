@@ -174,8 +174,8 @@
             <h3 data-r>Интернет-магазин и каталог</h3>
             <p data-r style="--i:1">Соберите магазин из готовых блоков или попросите агента нарисовать уникальный. Каталог растёт вместе с ассортиментом.</p>
             <ul class="tick" data-r style="--i:2">
-              <li>Публикация магазина: 10 000 ₽</li>
-              <li>Каталог на 100, 1 000 или 10 000 товаров</li>
+              <li>Публикация магазина: 10 000 ₽ один раз</li>
+              <li>Каталог на 100, 1 000 или 10 000 товаров, оплата ежемесячно</li>
               <li>Карточки товаров, формы и квизы уже внутри</li>
               <li>Для продвинутых: свой HTML и код</li>
             </ul>
@@ -230,22 +230,22 @@
             <fieldset class="ctl">
               <legend>Тариф</legend>
               <div class="plans">
-                <label class="plan"><input type="radio" name="plan" value="280"><span class="plan__box"><b>Старт</b><span>280 ₽ в месяц</span></span></label>
-                <label class="plan"><input type="radio" name="plan" value="440" checked><span class="plan__box"><b>Pro</b><span>440 ₽ в месяц</span></span></label>
-                <label class="plan"><input type="radio" name="plan" value="1200"><span class="plan__box"><b>Бизнес</b><span>1 200 ₽ в месяц</span></span></label>
+                <label class="plan"><input type="radio" name="plan" value="280"><span class="plan__box"><b>Старт</b><span>280 ₽ в месяц</span><span>1 сайт</span></span></label>
+                <label class="plan"><input type="radio" name="plan" value="440" checked><span class="plan__box"><b>Pro</b><span>440 ₽ в месяц</span><span>5 сайтов и доп. возможности</span></span></label>
+                <label class="plan"><input type="radio" name="plan" value="1200"><span class="plan__box"><b>Бизнес</b><span>1 200 ₽ в месяц</span><span>10 сайтов, всё из Pro и доп. возможности</span></span></label>
               </div>
-              <p class="hint">Во всех тарифах: пользование сервисом и публикация сайта.</p>
+              <p class="hint">Во всех тарифах: пользование сервисом и публикация сайтов. Pro и Бизнес открывают больше сайтов и дополнительные возможности.</p>
             </fieldset>
 
             <div class="ctl">
               <label class="ctl__t" for="packs">Кредиты для ИИ: <output id="packsOut">1 пакет</output></label>
               <input type="range" id="packs" min="0" max="10" value="1" step="1">
-              <p class="hint">Пакет 10 000 кредитов стоит 1 000 ₽. Бонусные 500 на старте уже ваши.</p>
+              <p class="hint">Пакет 10 000 кредитов стоит 1 000 ₽. Покупаете, когда прежний пакет закончился: кредиты тратятся на генерацию. Бонусные 500 на старте уже ваши.</p>
             </div>
 
             <fieldset class="ctl">
               <legend>Интернет-магазин</legend>
-              <label class="check"><input type="checkbox" id="shop"><span class="check__box" aria-hidden="true"></span><span>Нужен магазин: публикация 10 000 ₽</span></label>
+              <label class="check"><input type="checkbox" id="shop"><span class="check__box" aria-hidden="true"></span><span>Нужен магазин: публикация 10 000 ₽ один раз</span></label>
               <div class="cat" id="cat" hidden>
                 <label class="plan plan--s"><input type="radio" name="cat" value="1271" checked><span class="plan__box"><b>100 товаров</b><span>1 271 ₽</span></span></label>
                 <label class="plan plan--s"><input type="radio" name="cat" value="5928"><span class="plan__box"><b>1 000 товаров</b><span>5 928 ₽</span></span></label>
@@ -257,7 +257,7 @@
           <div class="calc__out" aria-live="polite">
             <p class="out__l">Каждый месяц</p>
             <p class="out__big"><span id="outMonth">440</span> ₽</p>
-            <p class="out__l">Дополнительно за кредиты и магазин</p>
+            <p class="out__l">Один раз: публикация магазина и кредиты по мере расхода</p>
             <p class="out__mid"><span id="outExtra">1 000</span> ₽</p>
             <ul class="out__list" id="outList"></ul>
             <a class="btn btn--ink" href="https://ypage.site/?utm_source=landing&utm_medium=calc" target="_blank" rel="noopener"><span>Начать с 14 дней бесплатно</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -293,7 +293,7 @@
           <details class="q" data-r><summary>Нужны ли хостинг, админка и программист?</summary><p>Нет. Публикация с SSL и кабинет с заявками уже входят в подписку. Свой домен подключается по пошаговой инструкции.</p></details>
           <details class="q" data-r><summary>Можно ли делать сайты на заказ для клиентов?</summary><p>Да. Одни делают сайты себе, другие заказчикам. Агент собирает черновик за минуты, вы дорабатываете и публикуете.</p></details>
           <details class="q" data-r><summary>У меня уже есть сайт. Можно его перенести?</summary><p>Да. Загрузите сайт ZIP-архивом с HTML, CSS и файлами, откроется редактор, где его можно менять вместе с ассистентом. Потом публикуйте на поддомене или на своём домене.</p></details>
-          <details class="q" data-r><summary>Сколько стоит интернет-магазин?</summary><p>Публикация одного магазина стоит 10 000 ₽. Каталог на 100 товаров: 1 271 ₽, на 1 000 товаров: 5 928 ₽, на 10 000 товаров: 25 404 ₽. Подписка выбирается отдельно: от 280 ₽ в месяц.</p></details>
+          <details class="q" data-r><summary>Сколько стоит интернет-магазин?</summary><p>Публикация одного магазина стоит 10 000 ₽ и оплачивается один раз. Каталог оплачивается ежемесячно: 100 товаров 1 271 ₽, 1 000 товаров 5 928 ₽, 10 000 товаров 25 404 ₽. Подписка выбирается отдельно: от 280 ₽ в месяц.</p></details>
         </div>
       </div>
     </section>
@@ -330,7 +330,7 @@
       <a class="footer__logo" href="#top" aria-label="YPage — наверх"><img src="assets/logo-dark.svg" alt="YPage" width="906" height="256" loading="lazy"></a>
       <div class="footer__row">
         <p>© <span id="year">2026</span> YPage. Сайты, картинки, видео и тексты с нейросетями без VPN.</p>
-        <p><a href="https://ypage.site/" target="_blank" rel="noopener">ypage.site</a> · <a href="privacy.html">Конфиденциальность</a></p>
+        <p>ИП Миколюк А. В., ИНН 590699314486, ОГРНИП 319508100314382 · <a href="https://ypage.site/" target="_blank" rel="noopener">ypage.site</a> ·<a href="privacy.html">Конфиденциальность</a></p>
       </div>
     </div>
   </footer>

@@ -398,14 +398,16 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/TZR29YZM32'
       const shopOn = shop.checked;
       const catVal = shopOn ? +calc.elements.cat.value : 0;
       const credits = n * 1000;
-      const extra = credits + (shopOn ? 10000 : 0) + catVal;
+      const extra = credits + (shopOn ? 10000 : 0);
+      const month = plan + catVal;
       packsOut.textContent = n === 0 ? 'не нужны' : n + ' ' + plural(n) + ' · ' + fmt(n * 10000) + ' кредитов';
       cat.hidden = !shopOn;
-      tween(outMonth, 'month', plan);
+      tween(outMonth, 'month', month);
       tween(outExtra, 'extra', extra);
       const rows = [['Тариф «' + planName[plan] + '»', fmt(plan) + ' ₽ в месяц']];
+      if (shopOn) rows.push(['Каталог: ' + catName[catVal], fmt(catVal) + ' ₽ в месяц']);
       if (n) rows.push(['Кредиты: ' + n + ' ' + plural(n), fmt(credits) + ' ₽']);
-      if (shopOn) { rows.push(['Публикация магазина', '10 000 ₽']); rows.push(['Каталог: ' + catName[catVal], fmt(catVal) + ' ₽']); }
+      if (shopOn) rows.push(['Публикация магазина', '10 000 ₽']);
       outList.innerHTML = rows.map(r => '<li><span>' + r[0] + '</span><b>' + r[1] + '</b></li>').join('');
     };
     calc.addEventListener('input', update);
